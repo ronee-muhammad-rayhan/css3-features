@@ -7,9 +7,9 @@
     <title>CSS Variable</title>
     <style>
         :root {
-            --primary-color: steelblue;
+            --primary-color: purple;
             --secondary-color: blue;
-            --font-size: 20px;
+            --font-size: 12px;
         }
 
         h1 {
@@ -28,6 +28,20 @@
         .box p {
             color: var(--primary-color);
         }
+
+        .sidebar {
+            background-color: lightgray;
+        }
+
+        .content {
+            background-color: lightskyblue;
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
     </style>
 </head>
 
@@ -39,6 +53,10 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eum, consequatur saepe totam numquam
             cumque nam. Aliquid officiis beatae neque pariatur veritatis? Quibusdam facere beatae mollitia minus iure
             impedit sint?</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content</div>
     </div>
 </body>
 
