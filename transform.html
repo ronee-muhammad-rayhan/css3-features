@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
     <style>
+        body {
+            margin-left: 50px;
+        }
+
         .container,
         .inner {
             width: 200px;
@@ -19,7 +23,22 @@
 
         .inner {
             border: 2px solid brown;
-            background-color: palegoldenrodgit;
+            background-color: palegoldenrod;
+
+            /*transform: scale(0.25, 0.5);
+            transform: rotate(-45deg);
+            if we want to apply multiple transform we should write in same transform attribute separating with whitespace(s)
+            https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+            https://www.w3schools.com/cssref/css3_pr_transform.php
+            css transform
+            skew 
+            */
+
+            /* transform: scale(0.5) translateX(100px) translateY(-150px) rotate(45deg); */
+        }
+
+        .inner:hover {
+            transform: scale(0.5) rotate(45deg) skewY(20deg);
         }
     </style>
 </head>
@@ -27,13 +46,13 @@
 <body>
     <h2>Explore Transform and Translate </h2>
     <!-- .container*3{Container $}>.inner{Inner $} -->
-    <div class="container">Container 1
+    <div class="container">
         <div class="inner">Inner 1</div>
     </div>
-    <div class="container">Container 2
+    <div class="container">
         <div class="inner">Inner 2</div>
     </div>
-    <div class="container">Container 3
+    <div class="container">
         <div class="inner">Inner 3</div>
     </div>
 </body>
