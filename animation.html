@@ -17,6 +17,31 @@
             }
         }
 
+        /* after effects */
+        /* granular */
+
+        @keyframes bounce {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                left: 150px;
+                top: 200px;
+            }
+
+            50% {
+                left: 300px;
+                top: 0px;
+            }
+
+            100% {
+                left: 500px;
+                top: 200px;
+            }
+        }
+
         .stage {
             width: 700px;
             height: 300px;
@@ -30,7 +55,8 @@
             border-radius: 50%;
             background-color: yellow;
             position: relative;
-            animation: ping-pong 2s ease-in-out 1s infinite alternate;
+            /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
+            animation: bounce 3s ease-in-out 0s infinite alternate;
         }
     </style>
 </head>
