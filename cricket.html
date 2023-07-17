@@ -11,6 +11,10 @@
             border: 1px solid steelblue;
         }
 
+        .bat {
+            transition: transform 0.1s ease-in;
+        }
+
         .field:hover .bat {
             transform: rotate(-60deg);
             transform-origin: top right;
@@ -19,7 +23,10 @@
         .ball {
             height: 50px;
             width: 50px;
+            border-radius: 50%;
             background-color: red;
+            position: relative;
+            left: 515px;
         }
     </style>
 </head>
